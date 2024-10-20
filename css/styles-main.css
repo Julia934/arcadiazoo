@@ -1,0 +1,113 @@
+/* import des font google */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", "Lucida Sans Regular", sans-serif;
+  box-sizing: border-box;
+}
+/* -------- HEADER -------- */
+header {
+   /*  min-height: 100vh;
+    background: url("../pictures/perroquet.jpg");
+    background-size: cover;
+    background-position: top center; */
+    background-repeat: no-repeat;
+  }
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 255, 153, 0.151);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+  }
+  .logo > img {
+    height: 5rem;
+    position: absolute;
+    margin-top: -30px;
+    z-index: 1;
+  }
+  .navbar {
+    margin-right: 1rem;
+    z-index: 2;
+  }
+  .navbar.active {
+    display: block;
+    transform: translateY(0);
+    z-index: 2;
+  }
+  .navbar a {
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.6rem;
+  }
+  .navbar a:hover {
+    color: #f3945d;
+  }
+  .icons {
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+    top: 15%;
+  }
+  h1 {
+    color: white;
+    padding: 7rem;
+    font-size: 4rem;
+    letter-spacing: 0.7rem;
+    text-shadow: 7px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+/* ------------ REPONSIVE BREAKPOINTS ----------- */
+/* ---- Smartphone ---*/
+@media (max-width: 870px) {
+    .header {
+      padding: 2rem;
+    }
+    .icons {
+      display: inline-flex;
+      position: absolute;
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 17.7rem;
+      background-color: rgba(0, 255, 153, 0.151);
+      backdrop-filter: blur(20px);
+      display: none;
+      transform: translateY(-100%);
+    }
+    .navbar.active {
+      display: block;
+      transform: translateY(0);
+    }
+    .navbar a {
+      display: block;
+      font-size: 2.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+}

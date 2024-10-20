@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link for swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <!-- link for css -->
+    <link rel="stylesheet" href="./css/styles-index.css"/>
+    <!-- link for icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link for font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Arcadia Zoo</title>
+  </head>
+  <body>
+    <header>
+      <!-- ---- HEADER ---- -->
+      <div class="header">
+        <a href="./index.html" class="logo">
+          <img src="./pictures/logozooarcadia.png" alt="logo zoo arcadia" />
+        </a>
+        <input type="checkbox" id="check" style="display: none" />
+        <label for="check" class="icons">
+          <i class="bx bx-menu" id="open-icone"></i>
+        </label>
+        <nav class="navbar">
+          <a href="/index.html">Accueil</a>
+          <a href="/animaux.html">Animaux</a>
+          <a href="/services.html">Services</a>
+          <a href="/connexion.html">Connexion</a>
+        </nav>
+      </div>
+      <div>
+        <h1>ARCADIA</h1>
+      </div>
+    </header>
+    <main>
+      <!-- ---- INDICATION ---- -->
+      <div class="sentence">
+        <h2>Un Zoo dédié à la protection de la nature</h2>
+      </div>
+      <div class="visite">
+        <br />
+        <h3 class="line-with-text">Préparez Votre Visite</h3>
+        <div class="category">
+          <!--  catégorie tarifs -->
+          <div class="purpose">
+            <img src="./pictures/billet.png" alt="icon billet" height="75" />
+            <p class="description">
+              <span class="stitle">Tarifs</span><br />Découvrez nos tarifs
+              avantageux pour profiter de votre visite, avec des offres pour
+              adultes, enfants et familles.
+            </p>
+          </div>
+          <!--catégorie adresse-->
+          <div class="purpose">
+            <img src="./pictures/gps.png" alt="icon billet" height="70" />
+            <p class="description">
+              <span class="stitle">Accès Zoo</span><br />Découvrez comment
+              rejoindre notre zoo facilement et planifiez votre journée pour une
+              aventure inoubliable.
+            </p>
+          </div>
+          <!-- catégorie horaires -->
+          <div class="purpose">
+            <img
+              src="./pictures/lhorloge.png"
+              alt="icon billet"
+              height="70"
+              id="horloge"
+            />
+            <p class="description">
+              <span class="stitle">Horaires</span><br />Consultez nos horaires
+              d’ouverture et planifiez votre journée idéale au zoo pour ne rien
+              manquer de nos activités
+            </p>
+          </div>
+        </div>
+        <!-- ---- HABITATS ---- -->
+        <div class="presentation">
+          <img src="./pictures/tigerhabitat.jpg" alt="vue du zoo arcadia" />
+          <p>
+            <span id="precision"
+              >Explorez la diversité des territoires<br
+            /></span>
+            <br />Admirez comment chaque espace recrée le milieu naturel des
+            animaux, offrant une expérience immersive et respectueuse de leur
+            bien-être, tout en intégrant des pratiques écologiques et une
+            autonomie énergétique pour préserver notre planète.
+          </p>
+        </div>
+        <div class="triangle"></div>
+        <div class="habitats">
+          <div class="territory">
+            <img
+              src="./pictures/savane.jpg"
+              alt="savane"
+              class="imgterritory"
+            />
+            <h4>La Savane</h4>
+            <p>Lions, éléphants d’Afrique, giraffes, zèbres, guépards</p>
+            <button>Parcourez la Savane</button>
+          </div>
+          <hr class="separator" />
+          <div class="territory">
+            <img
+              src="./pictures/jungle.jpg"
+              alt="savane"
+              class="imgterritory"
+            />
+            <h4>La Jungle</h4>
+            <p>Tigres, singes, jaguars, perroquets, panthères</p>
+            <button>Parcourez la Jungle</button>
+          </div>
+          <hr class="separator" />
+          <div class="territory">
+            <img
+              src="./pictures/marais.jpg"
+              alt="savane"
+              class="imgterritory"
+            />
+            <h4>Les Marais</h4>
+            <p>Alligators, serpents, tortues, hippopotames, flamants roses</p>
+            <button>Parcourez le Marais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- TESTEMONIALS ---- -->
+      
+      <section class="testemonials">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+    
+            <div class="card-item swiper-slide"> 
+              <img src="./pictures/lucasp.jpg" alt="user testimonials" />
+              <p class="user-testemonial">
+                "J’ai passé une journée géniale! Les enclos sont bien conçus, et
+                les animaux ont de l’espace. C’était impressionnant de voir les
+                lions et les girafes de si près. Le personnel est sympa et les
+                installations sont propres. Un super endroit pour se détendre et
+                découvrir des animaux !"
+              </p>
+              <h3 class="user-name">Lucas P.</h3>
+            </div>
+    
+    
+    
+            <div class="card-item swiper-slide">
+              <img src="./pictures/glorian.jpg" alt="user testimonials" />
+                <p class="user-testemonial">
+                  “Nous avons passé une superbe journée au zoo avec mes enfants!
+                  Ils ont adoré le petit train qui fait le tour du parc, c’est
+                  très pratique pour voir les animaux sans trop marcher. Le parc
+                  est très propre, ce qui est appréciable pour les familles. Une
+                  expérience agréable et adaptée aux enfants, on reviendra avec
+                  plaisir!”
+                </p>
+                <h3 class="user-name">Gloria N.</h3>
+              </div>
+    
+            <div class="card-item swiper-slide">
+              <img src="./pictures/julienp.jpg" alt="user testimonials" />
+              <p class="user-testemonial">
+                "Super visite avec mes petits-enfants! J’ai particulièrement
+                apprécié l’engagement écologique du parc, avec des espaces
+                naturels pour les animaux. La restauration est aussi au top, avec
+                des options saines et locales. Une belle journée en famille dans
+                un cadre respectueux de la nature!”
+              </p>
+              <h3 class="user-name">Julien P.</h3>
+            </div>
+           
+            <div class="card-item swiper-slide">
+              <img src="./pictures/sofiad.jpg" alt="user testimonials" />
+              <p class="user-testemonial">
+                “J’ai beaucoup apprécié ma journée au zoo ! Avoir un guide pour
+                nous en apprendre davantage sur les animaux a rendu l’expérience
+                encore plus intéressante. Les grands espaces verts pour se
+                détendre sont parfaits pour faire une pause. Un cadre idéal pour
+                passer un bon moment !”
+              </p>
+              <h3 class="user-name">Sofia B.</h3>
+    
+            </div>
+    
+    
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      
+      </section>
+    </main>
+    <!-- ------- FOOTER ------- -->
+    <footer>
+
+      <section class="footer">
+        <div class="logofooter">
+            <img src="./pictures/logofooter.png" alt="logo du site"/><br>
+            <h2>Arcadia</h2>
+        </div>
+        <div class="espace"></div>
+        <div class="contact">
+            <h4>Accès & Contact</h4><br>
+            <p>
+                <img src="./pictures/espace-reserve.png" alt="adresse du zoo" height="20"/>
+                12 Rue des Chevaliers<br> 56430 Tréhorenteuc
+            </p>
+            <br>
+            <p>
+                <img src="./pictures/telephone.png" alt="numéro du zoo" height="20"/>
+                01 43 78 90 56
+            </p><br>
+            <p>
+                <img src="./pictures/courrier.png" alt="formulaire" height="20"/>
+                Écrivez-nous
+            </p><br>
+            <p>Ouvert toute l’année<br>
+                7J/7 de 9h00 à 20h</p>
+        </div>
+        <div class="menufooter">
+            <h4>Index</h4><br>
+            <a href="#">Accueil</a>
+            <a href="#">Nos Services</a>
+            <a href="#">Nos Animaux</a>
+            <a href="#">Billetterie</a>
+            <a href="#">Pass Annuel</a>
+        </div>
+        <div class="socialmedia">
+            <i class='bx bxl-youtube'></i>
+            <i class='bx bxl-instagram-alt'></i>
+            <i class='bx bxl-facebook'></i>
+        </div>
+        <div class="copyright">
+            <small>Copyright © 2024 Zoo Aracadia. Tous droits réservés.</small>
+        </div>
+        
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
