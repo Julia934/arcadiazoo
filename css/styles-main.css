@@ -8,13 +8,6 @@
   box-sizing: border-box;
 }
 /* -------- HEADER -------- */
-header {
-   /*  min-height: 100vh;
-    background: url("../pictures/perroquet.jpg");
-    background-size: cover;
-    background-position: top center; */
-    background-repeat: no-repeat;
-  }
 .header {
     position: relative;
     top: 0;
@@ -32,7 +25,7 @@ header {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 255, 153, 0.151);
+    background-color: rgb(21, 100, 69);
     backdrop-filter: blur(2px);
     z-index: -1;
   }
@@ -70,12 +63,56 @@ header {
     top: 15%;
   }
   h1 {
-    color: white;
-    padding: 7rem;
-    font-size: 4rem;
-    letter-spacing: 0.7rem;
-    text-shadow: 7px 2px 7px rgba(0, 0, 0, 0.5);
+   
   }
+/*   ------ PAGE ANIMAUX ------ */
+/* Accueil */
+.pagedac{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: rgb(21, 100, 69);
+  gap: 8px;
+  border: 8px solid rgb(21, 100, 69);
+  align-items: center;
+}
+.cell1{
+  grid-column: 1 / 2; 
+  grid-row: 1 / 3;
+}
+.pagedac h1 {
+  position: absolute;
+  color: white;
+  padding-bottom: -5rem;
+  padding-left: 10rem;
+  font-size: 4rem;
+  letter-spacing: 0.7rem;
+  text-shadow: 7px 2px 7px rgba(255, 254, 254, 0.5);
+}
+.pagedac h2{
+  grid-column: 2 / 3; 
+  grid-row: 1 / 2;
+  background-color: rgb(21, 100, 69);
+  font-size: 4rem;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #f8e0d1;
+  
+}
+.pagedac p{
+  grid-column: 2 / 3; 
+  grid-row: 2 / 3;
+  background-color: rgb(21, 100, 69);
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.7rem;
+  color: #f8e0d1;
+}
 
 
 
