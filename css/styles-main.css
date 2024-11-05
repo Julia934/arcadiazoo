@@ -101,7 +101,6 @@
   align-items: center;
   justify-content: center;
   color: #f8e0d1;
-  
 }
 .pagedac p{
   grid-column: 2 / 3; 
@@ -114,10 +113,72 @@
   color: #f8e0d1;
 }
 
+/* ------ HABITAT ------ */
+.habitat{
+  background-color: #f8e0d1;
+  color: rgb(21, 100, 69);
+}
+.habitat h3{
+  text-align: center;
+  font-size: 3.8rem;
+  word-spacing: 0.9rem;
+  font-family: "Dancing Script";
+  padding: 6rem 3rem 4rem 3rem;
+}
+.habitat img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 20rem;
+}
+.habitat h4{
+  text-align: center;
+  color: black;
+  margin: -8rem 0 5rem 0;
+  font-size: 6rem;
+  text-shadow: 2px 2px 15px rgba(253, 249, 249, 0.5);
+}
+.item-habitat{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item-animals{
+  display: block;
+  border: 5px solid transparent;
+  border-radius: 1px; 
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 0.3rem;
+}
+.item-animals img{
+  border-radius: 0%;
+  width: 22rem;
+  height: 14rem;
+}
+.item-animals h5{
+  text-align: center;
+  padding: 2rem;
+  font-size: 2.5rem;
+  color: rgb(21, 100, 69);
+}
+.item-animals a{
+  text-decoration: none;
+}
+.decorative-line{
+  content: ""; 
+  display: block; 
+  width: 40rem; 
+  max-width: 80%; 
+  height: 5px; 
+  margin: 5rem auto;
+  background-image: url('../pictures/decorationline.jpg'); 
+  background-position: center center;
+}
 
 
 /* ------------ REPONSIVE BREAKPOINTS ----------- */
 /* ---- Smartphone ---*/
+
 @media (max-width: 870px) {
     .header {
       padding: 2rem;
